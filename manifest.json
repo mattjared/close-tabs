@@ -2,13 +2,13 @@
   "manifest_version": 3,
   "name": "Close Notion Tabs",
   "description": "Close Notions Tabs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "action": {
     "default_icon": "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["https://*.notion.so/native/*"],
+      "matches": ["https://www.notion.so/native/vercel/*"],
       "all_frames": true,
       "js": ["content_scripts.js"],
       "run_at": "document_end"
